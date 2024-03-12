@@ -14,7 +14,6 @@ services:
         MYSQL_DATABASE: keycloak
         MYSQL_USER: keycloak
         MYSQL_PASSWORD: password
-      # Copy-pasted from https://github.com/docker-library/mariadb/issues/94
       healthcheck:
         test: ["CMD", "mysqladmin", "ping", "--silent"]
   keycloak:
